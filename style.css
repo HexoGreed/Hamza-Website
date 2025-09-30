@@ -6,32 +6,7 @@ font-family: "Baskervville", serif;
 background-color: #222831; /* Middle container color*/
 }
 
-@media (max-width: 768px) {
-    .parent {
-        width: 80%; 
-        grid-template-columns: 1fr;
-    }
 
-
-    .Chicago {
-        width: 90%; 
-        max-width: 500px; 
-    }
-
-    .My_image {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%; 
-    }
-
-    .coding-gif, .Problem_solving {
-        width: 100%;
-        max-width: 300px;
-    }
-
-
-
-}
 
 
 img {
@@ -131,3 +106,45 @@ h1 {
     font-family: "Baskervville", serif;
 
 }
+
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 3rem; /* Make the main title slightly smaller */
+    }
+
+    /* 1. Make the main grid stack vertically */
+    .parent {
+        width: 90%; 
+        margin: 50px auto;
+        grid-template-columns: 1fr; /* Forces all children to stack into one column */
+        text-align: center; 
+    }
+
+    .Chicago {
+        width: 90%; 
+        height: auto;
+    }
+    
+    .My_image {
+        
+        width: 150px;
+        height: 150px;
+        border-radius: 50%; 
+    }
+
+    .coding-gif, .Problem_solving {
+        width: 100%; 
+        max-width: 300px; 
+        margin: 0 auto;
+    }
+    
+    /* Center the elements inside the profile div */
+    .profile h2, .profile p {
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
