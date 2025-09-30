@@ -6,6 +6,33 @@ font-family: "Baskervville", serif;
 background-color: #222831; /* Middle container color*/
 }
 
+@media (max-width: 768px) {
+    .parent {
+        width: 80%; 
+        grid-template-columns: 1fr;
+    }
+
+
+    .Chicago {
+        width: 90%; 
+        max-width: 500px; 
+    }
+
+    .My_image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%; 
+    }
+
+    .coding-gif, .Problem_solving {
+        width: 100%;
+        max-width: 300px;
+    }
+
+
+
+}
+
 
 img {
     overflow-clip-margin: content-box;
@@ -102,4 +129,5 @@ h1 {
     font-size: 40px;
     margin: 20px 10px 10px;
     font-family: "Baskervville", serif;
+
 }
